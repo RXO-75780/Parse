@@ -1,0 +1,69 @@
+{
+  "process_name": "Farmers Market Permit Application",
+  "description": "Application for a permit to operate a farmers market in Lincoln-Lancaster County.",
+  "form_id": "HF61",
+  "contact_info": {
+    "department": "Lincoln-Lancaster County Health Department",
+    "address": "3131 O Street, Lincoln, NE 68510",
+    "phone": "(402) 441-6280",
+    "email": "foodsafety@lincoln.ne.gov"
+  },
+  "permit_details": {
+    "fee": 100.0,
+    "payment_note": "When you provide a check as payment, you authorize us to use the information from your check to make a one-time electronic fund transfer from your account or to process the payment as a check transaction. Funds may be withdrawn as soon as the same day you make your payment, and you will not receive your check back."
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "topic": "Permit Type",
+      "prompt": "First, is this a new application, a renewal, or an addition?",
+      "options": ["New", "Renewal", "Addition"],
+      "required": true
+    },
+    {
+      "step_number": 2,
+      "topic": "Market Information",
+      "prompt": "What is the name of your market and its location?",
+      "fields": ["Market Name", "Market Location"],
+      "required": true
+    },
+    {
+      "step_number": 3,
+      "topic": "Operating Dates and Times",
+      "prompt": "Please provide the day(s) and time of operation, along with the season's opening and ending dates.",
+      "fields": [
+        "Day(s)",
+        "Time (from)",
+        "Time (to)",
+        "Season Opening Date",
+        "Ending Date"
+      ],
+      "required": true
+    },
+    {
+      "step_number": 4,
+      "topic": "Organization Contact",
+      "prompt": "Who is the contact person for the organization, and what is their address, phone number, and email address?",
+      "fields": [
+        "Organization",
+        "Contact Name",
+        "Contact Address",
+        "Contact Phone",
+        "Email Address"
+      ],
+      "required": true
+    },
+    {
+      "step_number": 5,
+      "topic": "Vendor Information",
+      "prompt": "Please provide a list of vendors selling home-prepared food or drink. For each vendor, I'll need their name, the food products they sell, and if they have approved training.",
+      "fields": [
+        "Vendor Name",
+        "Food Products Sold",
+        "Approved Training If Applicable"
+      ],
+      "multiple_entries": true,
+      "required": true
+    }
+  ]
+}
